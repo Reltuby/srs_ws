@@ -1,0 +1,29 @@
+running egg_info
+writing ../../build/srs_control/srs_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/srs_control/srs_control.egg-info/dependency_links.txt
+writing entry points to ../../build/srs_control/srs_control.egg-info/entry_points.txt
+writing requirements to ../../build/srs_control/srs_control.egg-info/requires.txt
+writing top-level names to ../../build/srs_control/srs_control.egg-info/top_level.txt
+reading manifest file '../../build/srs_control/srs_control.egg-info/SOURCES.txt'
+writing manifest file '../../build/srs_control/srs_control.egg-info/SOURCES.txt'
+running build
+running build_py
+copying srs_control/__init__.py -> /home/colby/srs_ws/build/srs_control/build/lib/srs_control
+copying srs_control/fruit_picker.py -> /home/colby/srs_ws/build/srs_control/build/lib/srs_control
+copying srs_control/fruit_pick_check.py -> /home/colby/srs_ws/build/srs_control/build/lib/srs_control
+copying srs_control/coord_transform.py -> /home/colby/srs_ws/build/srs_control/build/lib/srs_control
+running install
+running install_lib
+copying /home/colby/srs_ws/build/srs_control/build/lib/srs_control/fruit_pick_check.py -> /home/colby/srs_ws/install/srs_control/lib/python3.10/site-packages/srs_control
+byte-compiling /home/colby/srs_ws/install/srs_control/lib/python3.10/site-packages/srs_control/fruit_pick_check.py to fruit_pick_check.cpython-310.pyc
+running install_data
+copying resource/srs_control -> /home/colby/srs_ws/install/srs_control/share/ament_index/resource_index/packages
+copying package.xml -> /home/colby/srs_ws/install/srs_control/share/srs_control
+running install_egg_info
+removing '/home/colby/srs_ws/install/srs_control/lib/python3.10/site-packages/srs_control-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/srs_control/srs_control.egg-info to /home/colby/srs_ws/install/srs_control/lib/python3.10/site-packages/srs_control-0.0.0-py3.10.egg-info
+running install_scripts
+Installing coord_transform script to /home/colby/srs_ws/install/srs_control/lib/srs_control
+Installing fruit_pick_check script to /home/colby/srs_ws/install/srs_control/lib/srs_control
+Installing fruit_picker script to /home/colby/srs_ws/install/srs_control/lib/srs_control
+writing list of installed files to '/home/colby/srs_ws/build/srs_control/install.log'

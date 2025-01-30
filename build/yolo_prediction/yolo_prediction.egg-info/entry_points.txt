@@ -1,0 +1,2 @@
+[console_scripts]
+yolo_prediction_node = yolo_prediction.yolo_node:main

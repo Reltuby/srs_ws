@@ -1,0 +1,30 @@
+[1.132s] Invoking command in '/home/colby/srs_ws/src/srs_control': PYTHONPATH=/home/colby/srs_ws/build/srs_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/colby/srs_ws/install/srs_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/srs_control build --build-base /home/colby/srs_ws/build/srs_control/build install --record /home/colby/srs_ws/build/srs_control/install.log --single-version-externally-managed install_data
+[1.295s] running egg_info
+[1.306s] writing ../../build/srs_control/srs_control.egg-info/PKG-INFO
+[1.307s] writing dependency_links to ../../build/srs_control/srs_control.egg-info/dependency_links.txt
+[1.307s] writing entry points to ../../build/srs_control/srs_control.egg-info/entry_points.txt
+[1.308s] writing requirements to ../../build/srs_control/srs_control.egg-info/requires.txt
+[1.308s] writing top-level names to ../../build/srs_control/srs_control.egg-info/top_level.txt
+[1.331s] reading manifest file '../../build/srs_control/srs_control.egg-info/SOURCES.txt'
+[1.332s] writing manifest file '../../build/srs_control/srs_control.egg-info/SOURCES.txt'
+[1.332s] running build
+[1.332s] running build_py
+[1.333s] copying srs_control/__init__.py -> /home/colby/srs_ws/build/srs_control/build/lib/srs_control
+[1.333s] copying srs_control/fruit_picker.py -> /home/colby/srs_ws/build/srs_control/build/lib/srs_control
+[1.333s] copying srs_control/coord_transform.py -> /home/colby/srs_ws/build/srs_control/build/lib/srs_control
+[1.333s] copying srs_control/fruit_picker copy.py -> /home/colby/srs_ws/build/srs_control/build/lib/srs_control
+[1.333s] running install
+[1.337s] running install_lib
+[1.351s] copying /home/colby/srs_ws/build/srs_control/build/lib/srs_control/fruit_picker.py -> /home/colby/srs_ws/install/srs_control/lib/python3.10/site-packages/srs_control
+[1.351s] byte-compiling /home/colby/srs_ws/install/srs_control/lib/python3.10/site-packages/srs_control/fruit_picker.py to fruit_picker.cpython-310.pyc
+[1.353s] running install_data
+[1.353s] copying resource/srs_control -> /home/colby/srs_ws/install/srs_control/share/ament_index/resource_index/packages
+[1.353s] copying package.xml -> /home/colby/srs_ws/install/srs_control/share/srs_control
+[1.353s] running install_egg_info
+[1.364s] removing '/home/colby/srs_ws/install/srs_control/lib/python3.10/site-packages/srs_control-0.0.0-py3.10.egg-info' (and everything under it)
+[1.364s] Copying ../../build/srs_control/srs_control.egg-info to /home/colby/srs_ws/install/srs_control/lib/python3.10/site-packages/srs_control-0.0.0-py3.10.egg-info
+[1.365s] running install_scripts
+[1.447s] Installing coord_transform script to /home/colby/srs_ws/install/srs_control/lib/srs_control
+[1.447s] Installing fruit_picker script to /home/colby/srs_ws/install/srs_control/lib/srs_control
+[1.448s] writing list of installed files to '/home/colby/srs_ws/build/srs_control/install.log'
+[1.497s] Invoked command in '/home/colby/srs_ws/src/srs_control' returned '0': PYTHONPATH=/home/colby/srs_ws/build/srs_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/colby/srs_ws/install/srs_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/srs_control build --build-base /home/colby/srs_ws/build/srs_control/build install --record /home/colby/srs_ws/build/srs_control/install.log --single-version-externally-managed install_data

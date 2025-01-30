@@ -1,0 +1,24 @@
+[1.724s] Invoking command in '/home/colby/srs_ws/src/srs_launch_files': PYTHONPATH=/home/colby/srs_ws/build/srs_launch_files/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/colby/srs_ws/install/srs_launch_files/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/srs_launch_files build --build-base /home/colby/srs_ws/build/srs_launch_files/build install --record /home/colby/srs_ws/build/srs_launch_files/install.log --single-version-externally-managed install_data
+[1.905s] running egg_info
+[1.919s] writing ../../build/srs_launch_files/srs_launch_files.egg-info/PKG-INFO
+[1.920s] writing dependency_links to ../../build/srs_launch_files/srs_launch_files.egg-info/dependency_links.txt
+[1.921s] writing requirements to ../../build/srs_launch_files/srs_launch_files.egg-info/requires.txt
+[1.921s] writing top-level names to ../../build/srs_launch_files/srs_launch_files.egg-info/top_level.txt
+[1.942s] reading manifest file '../../build/srs_launch_files/srs_launch_files.egg-info/SOURCES.txt'
+[1.943s] writing manifest file '../../build/srs_launch_files/srs_launch_files.egg-info/SOURCES.txt'
+[1.943s] running build
+[1.943s] running build_py
+[1.943s] copying srs_launch_files/__init__.py -> /home/colby/srs_ws/build/srs_launch_files/build/lib/srs_launch_files
+[1.944s] running install
+[1.947s] running install_lib
+[1.957s] running install_data
+[1.957s] copying resource/srs_launch_files -> /home/colby/srs_ws/install/srs_launch_files/share/ament_index/resource_index/packages
+[1.957s] copying package.xml -> /home/colby/srs_ws/install/srs_launch_files/share/srs_launch_files
+[1.957s] copying launch/Test_launch.py -> /home/colby/srs_ws/install/srs_launch_files/share/srs_launch_files/launch
+[1.957s] copying launch/start_nodes_launch.py -> /home/colby/srs_ws/install/srs_launch_files/share/srs_launch_files/launch
+[1.957s] running install_egg_info
+[1.968s] removing '/home/colby/srs_ws/install/srs_launch_files/lib/python3.10/site-packages/srs_launch_files-0.0.0-py3.10.egg-info' (and everything under it)
+[1.968s] Copying ../../build/srs_launch_files/srs_launch_files.egg-info to /home/colby/srs_ws/install/srs_launch_files/lib/python3.10/site-packages/srs_launch_files-0.0.0-py3.10.egg-info
+[1.969s] running install_scripts
+[2.059s] writing list of installed files to '/home/colby/srs_ws/build/srs_launch_files/install.log'
+[2.127s] Invoked command in '/home/colby/srs_ws/src/srs_launch_files' returned '0': PYTHONPATH=/home/colby/srs_ws/build/srs_launch_files/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/colby/srs_ws/install/srs_launch_files/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/srs_launch_files build --build-base /home/colby/srs_ws/build/srs_launch_files/build install --record /home/colby/srs_ws/build/srs_launch_files/install.log --single-version-externally-managed install_data

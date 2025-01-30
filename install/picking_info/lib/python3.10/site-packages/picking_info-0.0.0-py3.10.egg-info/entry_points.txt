@@ -1,0 +1,4 @@
+[console_scripts]
+gripper_orientation_basic = picking_info.gripper_orientation_z_basic:main
+gripper_orientation_centroid = picking_info.gripper_orientation_z_farthest_centroid:main
+gripper_orientation_z = picking_info.gripper_orientation_z_order:main

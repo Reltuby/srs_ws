@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/srs_launch_files/srs_launch_files.egg-info/PKG-INFO
+../../build/srs_launch_files/srs_launch_files.egg-info/SOURCES.txt
+../../build/srs_launch_files/srs_launch_files.egg-info/dependency_links.txt
+../../build/srs_launch_files/srs_launch_files.egg-info/requires.txt
+../../build/srs_launch_files/srs_launch_files.egg-info/top_level.txt
+../../build/srs_launch_files/srs_launch_files.egg-info/zip-safe
+launch/Test_launch.py
+launch/start_nodes_launch.py
+resource/srs_launch_files
+srs_launch_files/__init__.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

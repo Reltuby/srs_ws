@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/srs_launch_files/srs_launch_files.egg-info/PKG-INFO
+writing dependency_links to ../../build/srs_launch_files/srs_launch_files.egg-info/dependency_links.txt
+writing requirements to ../../build/srs_launch_files/srs_launch_files.egg-info/requires.txt
+writing top-level names to ../../build/srs_launch_files/srs_launch_files.egg-info/top_level.txt
+reading manifest file '../../build/srs_launch_files/srs_launch_files.egg-info/SOURCES.txt'
+writing manifest file '../../build/srs_launch_files/srs_launch_files.egg-info/SOURCES.txt'
+running build
+running build_py
+copying srs_launch_files/__init__.py -> /home/colby/srs_ws/build/srs_launch_files/build/lib/srs_launch_files
+running install
+running install_lib
+running install_data
+copying resource/srs_launch_files -> /home/colby/srs_ws/install/srs_launch_files/share/ament_index/resource_index/packages
+copying package.xml -> /home/colby/srs_ws/install/srs_launch_files/share/srs_launch_files
+copying launch/start_nodes_launch.py -> /home/colby/srs_ws/install/srs_launch_files/share/srs_launch_files/launch
+running install_egg_info
+removing '/home/colby/srs_ws/install/srs_launch_files/lib/python3.10/site-packages/srs_launch_files-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/srs_launch_files/srs_launch_files.egg-info to /home/colby/srs_ws/install/srs_launch_files/lib/python3.10/site-packages/srs_launch_files-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/colby/srs_ws/build/srs_launch_files/install.log'

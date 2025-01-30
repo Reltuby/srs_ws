@@ -1,0 +1,6 @@
+[submodule "src/realsense-ros"]
+	path = src/realsense-ros
+	url = https://github.com/IntelRealSense/realsense-ros
+[submodule "src/ur_rtde"]
+	path = src/ur_rtde
+	url = https://gitlab.com/sdurobotics/ur_rtde.git

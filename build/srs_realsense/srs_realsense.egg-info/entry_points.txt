@@ -1,0 +1,3 @@
+[console_scripts]
+pixel_to_point = srs_realsense.pixel_to_point:main
+synced_image_publisher_node = srs_realsense.synced_image_publisher_node:main

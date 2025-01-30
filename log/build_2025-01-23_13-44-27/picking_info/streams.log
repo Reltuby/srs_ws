@@ -1,0 +1,27 @@
+[1.148s] Invoking command in '/home/colby/srs_ws/src/picking_info': PYTHONPATH=/home/colby/srs_ws/build/picking_info/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/colby/srs_ws/install/picking_info/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/picking_info build --build-base /home/colby/srs_ws/build/picking_info/build install --record /home/colby/srs_ws/build/picking_info/install.log --single-version-externally-managed install_data
+[1.312s] running egg_info
+[1.321s] writing ../../build/picking_info/picking_info.egg-info/PKG-INFO
+[1.321s] writing dependency_links to ../../build/picking_info/picking_info.egg-info/dependency_links.txt
+[1.321s] writing entry points to ../../build/picking_info/picking_info.egg-info/entry_points.txt
+[1.321s] writing requirements to ../../build/picking_info/picking_info.egg-info/requires.txt
+[1.321s] writing top-level names to ../../build/picking_info/picking_info.egg-info/top_level.txt
+[1.345s] reading manifest file '../../build/picking_info/picking_info.egg-info/SOURCES.txt'
+[1.346s] writing manifest file '../../build/picking_info/picking_info.egg-info/SOURCES.txt'
+[1.346s] running build
+[1.346s] running build_py
+[1.346s] copying picking_info/__init__.py -> /home/colby/srs_ws/build/picking_info/build/lib/picking_info
+[1.346s] copying picking_info/gripper_orientation_node.py -> /home/colby/srs_ws/build/picking_info/build/lib/picking_info
+[1.346s] running install
+[1.349s] running install_lib
+[1.360s] copying /home/colby/srs_ws/build/picking_info/build/lib/picking_info/gripper_orientation_node.py -> /home/colby/srs_ws/install/picking_info/lib/python3.10/site-packages/picking_info
+[1.360s] byte-compiling /home/colby/srs_ws/install/picking_info/lib/python3.10/site-packages/picking_info/gripper_orientation_node.py to gripper_orientation_node.cpython-310.pyc
+[1.361s] running install_data
+[1.361s] copying resource/picking_info -> /home/colby/srs_ws/install/picking_info/share/ament_index/resource_index/packages
+[1.361s] copying package.xml -> /home/colby/srs_ws/install/picking_info/share/picking_info
+[1.362s] running install_egg_info
+[1.373s] removing '/home/colby/srs_ws/install/picking_info/lib/python3.10/site-packages/picking_info-0.0.0-py3.10.egg-info' (and everything under it)
+[1.373s] Copying ../../build/picking_info/picking_info.egg-info to /home/colby/srs_ws/install/picking_info/lib/python3.10/site-packages/picking_info-0.0.0-py3.10.egg-info
+[1.373s] running install_scripts
+[1.453s] Installing gripper_orientation script to /home/colby/srs_ws/install/picking_info/lib/picking_info
+[1.453s] writing list of installed files to '/home/colby/srs_ws/build/picking_info/install.log'
+[1.493s] Invoked command in '/home/colby/srs_ws/src/picking_info' returned '0': PYTHONPATH=/home/colby/srs_ws/build/picking_info/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/colby/srs_ws/install/picking_info/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/picking_info build --build-base /home/colby/srs_ws/build/picking_info/build install --record /home/colby/srs_ws/build/picking_info/install.log --single-version-externally-managed install_data

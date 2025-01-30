@@ -1,0 +1,27 @@
+[1.127s] Invoking command in '/home/colby/srs_ws/src/srs_realsense': PYTHONPATH=/home/colby/srs_ws/build/srs_realsense/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/colby/srs_ws/install/srs_realsense/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/srs_realsense build --build-base /home/colby/srs_ws/build/srs_realsense/build install --record /home/colby/srs_ws/build/srs_realsense/install.log --single-version-externally-managed install_data
+[1.312s] running egg_info
+[1.326s] writing ../../build/srs_realsense/srs_realsense.egg-info/PKG-INFO
+[1.326s] writing dependency_links to ../../build/srs_realsense/srs_realsense.egg-info/dependency_links.txt
+[1.326s] writing entry points to ../../build/srs_realsense/srs_realsense.egg-info/entry_points.txt
+[1.326s] writing requirements to ../../build/srs_realsense/srs_realsense.egg-info/requires.txt
+[1.327s] writing top-level names to ../../build/srs_realsense/srs_realsense.egg-info/top_level.txt
+[1.351s] reading manifest file '../../build/srs_realsense/srs_realsense.egg-info/SOURCES.txt'
+[1.352s] writing manifest file '../../build/srs_realsense/srs_realsense.egg-info/SOURCES.txt'
+[1.352s] running build
+[1.352s] running build_py
+[1.353s] copying srs_realsense/pixel_to_point.py -> /home/colby/srs_ws/build/srs_realsense/build/lib/srs_realsense
+[1.353s] copying srs_realsense/__init__.py -> /home/colby/srs_ws/build/srs_realsense/build/lib/srs_realsense
+[1.353s] copying srs_realsense/synced_image_publisher_node.py -> /home/colby/srs_ws/build/srs_realsense/build/lib/srs_realsense
+[1.353s] running install
+[1.356s] running install_lib
+[1.369s] running install_data
+[1.369s] copying resource/srs_realsense -> /home/colby/srs_ws/install/srs_realsense/share/ament_index/resource_index/packages
+[1.369s] copying package.xml -> /home/colby/srs_ws/install/srs_realsense/share/srs_realsense
+[1.369s] running install_egg_info
+[1.384s] removing '/home/colby/srs_ws/install/srs_realsense/lib/python3.10/site-packages/srs_realsense-0.0.0-py3.10.egg-info' (and everything under it)
+[1.384s] Copying ../../build/srs_realsense/srs_realsense.egg-info to /home/colby/srs_ws/install/srs_realsense/lib/python3.10/site-packages/srs_realsense-0.0.0-py3.10.egg-info
+[1.385s] running install_scripts
+[1.486s] Installing pixel_to_point script to /home/colby/srs_ws/install/srs_realsense/lib/srs_realsense
+[1.486s] Installing synced_image_publisher_node script to /home/colby/srs_ws/install/srs_realsense/lib/srs_realsense
+[1.486s] writing list of installed files to '/home/colby/srs_ws/build/srs_realsense/install.log'
+[1.524s] Invoked command in '/home/colby/srs_ws/src/srs_realsense' returned '0': PYTHONPATH=/home/colby/srs_ws/build/srs_realsense/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/colby/srs_ws/install/srs_realsense/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/srs_realsense build --build-base /home/colby/srs_ws/build/srs_realsense/build install --record /home/colby/srs_ws/build/srs_realsense/install.log --single-version-externally-managed install_data
