@@ -28,7 +28,7 @@ class FruitPickerNode(Node):
         self.subscription = self.create_subscription(
             String, '/gripper_orientation', self.process_fruit_positions, 10
         )
-        self.get_logger().info("Fruit pick check initialised")
+        self.get_logger().info("Individual Fruit Picker Initialised")
 
     def publish_joint_states(self):
         """Publishes the current joint states of the robot."""
@@ -102,7 +102,7 @@ class FruitPickerNode(Node):
             self.get_logger().error(f"Error processing targets: {e}")
 
     def pick_fruit(self, position, rotation):
-        """Pick the first fruit and return"""
+        """Pick fruit and return"""
         try:
             x, y, z = position
             rz = rotation
@@ -118,7 +118,6 @@ class FruitPickerNode(Node):
             waypoint_pose_flipped = [x, y, waypoint_z, 0.0, 0.0, rz_flipped]
 
             if self.move_to_pose_and_log(waypoint_pose, "Moved to waypoint"):
-
                 target_pose = [x, y, z, 0.0, 0.0, rz]
 
                 if self.move_to_pose_and_log(target_pose, "Moved to target"):
@@ -126,8 +125,8 @@ class FruitPickerNode(Node):
                     self.rtde_io.setConfigurableDigitalOut(7, 1)
 
                     tilted_pose = self.rotate_local_rx()
-                    if self.move_to_pose_and_log(tilted_pose, "Picking"):
 
+                    if self.move_to_pose_and_log(tilted_pose, "Picking"):
                         waypoint_tilted_pose = [x, y, waypoint_z, *tilted_pose[3:]]
 
                         if self.move_to_pose_and_log(waypoint_tilted_pose, "Picked fruit"):

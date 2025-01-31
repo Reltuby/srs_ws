@@ -65,7 +65,7 @@ def generate_launch_description():
         name='robot_state_publisher',
         output='screen',
         parameters=[
-            {'robot_description': open('/home/colby/urdf_final.urdf').read()}
+            {'robot_description': open('/home/colby/srs_ws/urdf_final.urdf').read()} #change this to locate desired urdf file
         ]
     )
 
