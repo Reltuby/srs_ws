@@ -3,8 +3,13 @@ from launch_ros.actions import Node
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 import os
 from ament_index_python.packages import get_package_share_directory
-from launch.actions import DeclareLaunchArgument, IncludeLaunchDescription, OpaqueFunction
-from launch.substitutions import LaunchConfiguration
+from launch.actions import IncludeLaunchDescription
+
+'''
+launch file that was intended to save the coordinates of detected kiwifruit in the field for later lab testing
+more testing required as it did not work for field test
+However it is likely that the issue is with the save cluster node not the launch file.
+'''
 
 def generate_launch_description():
     realsense_launch = IncludeLaunchDescription(

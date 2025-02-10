@@ -4,6 +4,12 @@ from std_msgs.msg import String, Bool
 import json
 import os
 
+'''node meant to save the detected kiwifruit in the field for later lab testing
+Currently does not work in field, I think this is because the robot joint states are not being published when it is used
+Solution is to either make a new node to publish joint states which only runs in tandem with this node or to connect to rtde_io in this node
+
+Other changes could be to make the node run once (Make it a service?) and change the naming, otherwise you need to rename each file it saves'''
+
 class SaveTransformedCoords(Node):
     def __init__(self):
         super().__init__('save_transformed_coords')

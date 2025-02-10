@@ -7,6 +7,15 @@ from message_filters import Subscriber, ApproximateTimeSynchronizer
 from rclpy.qos import QoSProfile, QoSDurabilityPolicy
 import numpy as np
 
+'''
+Image publisher node that ensures depth and color images are synced, This is not technically required
+also allows for any preprocessing of images before being sent to the CNN
+Currently only publishes a black image to the colorimage topic when the UR5 arm is not ready to pick
+
+the published imgaes are in an image format
+'''
+
+
 class SyncedImagePublisherNode(Node):
     def __init__(self):
         super().__init__('synced_image_publisher')
@@ -37,6 +46,7 @@ class SyncedImagePublisherNode(Node):
         self.should_publish = msg.data
         self.get_logger().info(f"Publishing Enabled: {self.should_publish}")
 
+    #This node is mostly redundant as it was made before I had a proper understanding of what needed to be done before giving an image to the YOLO CNN (nothing)
     def image_callback(self, color_msg: Image, depth_msg: Image):
         #callback for synced color and depth messages
         try:
@@ -49,14 +59,13 @@ class SyncedImagePublisherNode(Node):
             I am currently unsure if any needs to be done but i will add this section for ease of editing if the need arises
             '''
 
-            ###### self.get_logger().info('Processing New Images...')
-
             #published synced frame only if trigger is set
             if self.should_publish:
                 self.color_publisher.publish(self.bridge.cv2_to_imgmsg(color_image, encoding='bgr8'))
                 self.depth_publisher.publish(self.bridge.cv2_to_imgmsg(depth_image, encoding='passthrough'))
                 #self.get_logger().info("Published Synchronized Images.")
             else:
+                #if not triggered then publish the blakc image so no centroids are detected randomly.
                 self.color_publisher.publish(self.bridge.cv2_to_imgmsg(black_image, encoding='bgr8'))
                 self.depth_publisher.publish(self.bridge.cv2_to_imgmsg(depth_image, encoding='passthrough'))
                 

@@ -6,6 +6,16 @@ from sensor_msgs.msg import Image, CameraInfo
 from std_msgs.msg import String
 from cv_bridge import CvBridge
 
+'''
+Node that converts all points detected by the CNN into 3D coordinates using deproject pixel to point function
+
+/centroid_coord is json encoded string in this format where 0 is for calyxes and 1 is for kiwifruit
+{
+  "0": [[1.23, 2.34, 3.45], [4.56, 5.67, 6.78]],
+  "1": [[7.89, 8.90, 9.01]]
+}
+'''
+
 class DepthToPointNode(Node):
     def __init__(self):
         super().__init__('depth_to_point_node')
@@ -39,12 +49,14 @@ class DepthToPointNode(Node):
 
         self.publisher = self.create_publisher(String, "/centroid_coord", 10)
 
+    #retrieves the camera intrinsics
     def camera_info_callback(self, msg):
         # extract intrinsics from msg
         self.intrinsics = msg.k
         #self.get_logger().info("Camera Intrinsics Recieved")
         #look up intrinsics matrix msg.K
 
+    #load the predicted kiwifruit positions
     def centroid_data_callback(self, msg):
         try:
             self.centroids_by_class = json.loads(msg.data)
@@ -52,11 +64,13 @@ class DepthToPointNode(Node):
         except json.JSONDecodeError as e:
             self.get_logger().info(f"Failed to parse centroid data: {e}")
 
+
     def depth_callback(self, msg):
+        #check that camera info is available
         if self.intrinsics is None:
             self.get_logger().warn('Waiting For Camera Intrinsics...')
             return
-        
+        #check that centroids have been recieved
         if self.centroids_by_class is None:
             self.get_logger().warn('Waiting For Centroid Data...')
             return
@@ -64,6 +78,7 @@ class DepthToPointNode(Node):
         #convert ros Image to numpy array
         depth_image = self.bridge.imgmsg_to_cv2(msg, desired_encoding='passthrough')
 
+        #store all of the ros intrinsics in variables
         intrinsics = rs.intrinsics()
         intrinsics.fx = self.intrinsics[0] #fx    
         intrinsics.fy = self.intrinsics[4] #fy    
@@ -76,6 +91,7 @@ class DepthToPointNode(Node):
         all_points_3d = {}
 
         #Iterate through each class and its centroids
+        #converts each pixel into a 3d coordinate
         for cls, centroids in self.centroids_by_class.items():
             class_points = []
             for (pixel_x, pixel_y) in centroids:
@@ -85,9 +101,10 @@ class DepthToPointNode(Node):
                     if depth_value == 0:
                         self.get_logger().warn(f"No depth value at {pixel_x}, {pixel_y} for class {cls}")
                         continue
-
+                    #if valid pixel convert to point
                     point_3d = rs.rs2_deproject_pixel_to_point(intrinsics, [pixel_x, pixel_y], depth_value)
                     
+                    #add to list
                     class_points.append((point_3d[0], point_3d[1], point_3d[2]))
                     self.get_logger().info(f"Class {cls}: 3D coordinates at ({pixel_x}, {pixel_y}) -> x = {point_3d[0]:.2f}, y={point_3d[1]:.2f}, z={point_3d[2]:.2f} meters")
                 else:
@@ -96,6 +113,7 @@ class DepthToPointNode(Node):
             #store the points for this class        
             all_points_3d[cls] = class_points
 
+        #publish the 3d coordinates
         try:
             message_data = json.dumps(all_points_3d)
             msg = String()
