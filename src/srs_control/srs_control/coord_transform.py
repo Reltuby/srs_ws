@@ -4,6 +4,11 @@ from tf2_geometry_msgs.tf2_geometry_msgs import PointStamped
 from tf2_ros import TransformListener, Buffer
 from std_msgs.msg import String
 
+'''
+Node that transforms the coordinates from the camera coordinates system to the UR5 coordinate System
+need to run the robot_state_publisher and a joint state publisher for transforms to be calculated
+'''
+
 class CoordTransform(Node):
     def __init__(self):
         super().__init__('coord_transform')
@@ -25,11 +30,12 @@ class CoordTransform(Node):
             #decode JSON
             centroids = json.loads(msg.data)
 
-            #lookup the transform from tcp to base
+            #lookup the transform from tool center point to base
             transform = self.tf_buffer.lookup_transform('base', 'camera_depth_optical_frame', rclpy.time.Time())
             
             transformed_centroids = {}
 
+            #iterate through all coordinates
             for key, coords_list in centroids.items():
                 transformed_coords = []
                 for coord in coords_list:
@@ -39,7 +45,7 @@ class CoordTransform(Node):
                     point.header.frame_id = 'camera_depth_optical_frame'
                     point.point.x, point.point.y, point.point.z = coord
 
-                    #transform point
+                    #transform coordinate
                     transformed_point = self.tf_buffer.transform(point, 'base')
                     transformed_coords.append([
                         transformed_point.point.x,

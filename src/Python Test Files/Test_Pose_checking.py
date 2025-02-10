@@ -1,4 +1,6 @@
-import rtde_control, rtde_receive, json
+import rtde_control
+
+'''check if a pose is reachable'''
 
 class RobotArm:
     def __init__(self, robot_ip):

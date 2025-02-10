@@ -7,8 +7,8 @@ This repository contains a ROS2 workspace for the automated kiwifruit harvesting
 - **Operating System**: Ubuntu Linux 22.04 with kernel `5.15.0-43-generic`
 - **ROS2 Version**: Humble Hawksbill (up-to-date as of February 14, 2025)
 - **Python Version**: 3.10.12
-- **RealSense-ROS**: Installed from [Intel RealSense ROS GitHub](https://github.com/IntelRealSense/realsense-ros)
-- **ur_rtde**: Installed from [UR RTDE Installation](https://sdurobotics.gitlab.io/ur_rtde/installation/installation.html)
+- **RealSense-ROS**: Installed from [Intel RealSense ROS GitHub](https://github.com/IntelRealSense/realsense-ros)  *(Can't find version, last update to GitHub files was September 3, 2024)*
+- **ur_rtde**: *Version 1.6.0*, Installed from [UR RTDE Installation](https://sdurobotics.gitlab.io/ur_rtde/installation/installation.html)
 
 ## Connecting to the Robot
 

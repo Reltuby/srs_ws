@@ -1,5 +1,9 @@
 import rtde_control, rtde_receive
 
+
+'''move arm to point in either linear or joint spacae
+just uncomment to choose which'''
+
 class RobotArm:
     def __init__(self, robot_ip):
         self.robot_ip = robot_ip
@@ -12,9 +16,9 @@ class RobotArm:
         
     def process_fruit_positions(self, waypoint):
         try:
-            #move Linearly to Point
-            #self.rtde_c.moveL(waypoint, speed=0.1, acceleration=0.1)
-            self.rtde_c.moveJ([-3.5, -3.85, 1.74, -2.5, -0.22, 01.3])
+            
+            #self.rtde_c.moveL(waypoin)
+            self.rtde_c.moveJ([0, -4.136, 2.53, -2.7, -0.7, 0])
 
         except Exception as e:
             print(f"Error Moving Home: {e}")

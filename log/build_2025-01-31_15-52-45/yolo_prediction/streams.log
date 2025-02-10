@@ -1,0 +1,26 @@
+[1.233s] Invoking command in '/home/colby/srs_ws/src/yolo_prediction': PYTHONPATH=/home/colby/srs_ws/build/yolo_prediction/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/colby/srs_ws/install/yolo_prediction/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolo_prediction build --build-base /home/colby/srs_ws/build/yolo_prediction/build install --record /home/colby/srs_ws/build/yolo_prediction/install.log --single-version-externally-managed install_data
+[1.432s] running egg_info
+[1.444s] writing ../../build/yolo_prediction/yolo_prediction.egg-info/PKG-INFO
+[1.444s] writing dependency_links to ../../build/yolo_prediction/yolo_prediction.egg-info/dependency_links.txt
+[1.444s] writing entry points to ../../build/yolo_prediction/yolo_prediction.egg-info/entry_points.txt
+[1.445s] writing requirements to ../../build/yolo_prediction/yolo_prediction.egg-info/requires.txt
+[1.445s] writing top-level names to ../../build/yolo_prediction/yolo_prediction.egg-info/top_level.txt
+[1.469s] reading manifest file '../../build/yolo_prediction/yolo_prediction.egg-info/SOURCES.txt'
+[1.470s] writing manifest file '../../build/yolo_prediction/yolo_prediction.egg-info/SOURCES.txt'
+[1.470s] running build
+[1.471s] running build_py
+[1.471s] copying yolo_prediction/yolo_node.py -> /home/colby/srs_ws/build/yolo_prediction/build/lib/yolo_prediction
+[1.471s] copying yolo_prediction/__init__.py -> /home/colby/srs_ws/build/yolo_prediction/build/lib/yolo_prediction
+[1.471s] running install
+[1.475s] running install_lib
+[1.490s] running install_data
+[1.490s] copying resource/yolo_prediction -> /home/colby/srs_ws/install/yolo_prediction/share/ament_index/resource_index/packages
+[1.490s] copying package.xml -> /home/colby/srs_ws/install/yolo_prediction/share/yolo_prediction
+[1.490s] copying weights/YOLOv11_8.pt -> /home/colby/srs_ws/install/yolo_prediction/share/yolo_prediction/weights
+[1.507s] running install_egg_info
+[1.522s] removing '/home/colby/srs_ws/install/yolo_prediction/lib/python3.10/site-packages/yolo_prediction-0.0.0-py3.10.egg-info' (and everything under it)
+[1.522s] Copying ../../build/yolo_prediction/yolo_prediction.egg-info to /home/colby/srs_ws/install/yolo_prediction/lib/python3.10/site-packages/yolo_prediction-0.0.0-py3.10.egg-info
+[1.523s] running install_scripts
+[1.625s] Installing yolo_prediction_node script to /home/colby/srs_ws/install/yolo_prediction/lib/yolo_prediction
+[1.626s] writing list of installed files to '/home/colby/srs_ws/build/yolo_prediction/install.log'
+[1.678s] Invoked command in '/home/colby/srs_ws/src/yolo_prediction' returned '0': PYTHONPATH=/home/colby/srs_ws/build/yolo_prediction/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/colby/srs_ws/install/yolo_prediction/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/yolo_prediction build --build-base /home/colby/srs_ws/build/yolo_prediction/build install --record /home/colby/srs_ws/build/yolo_prediction/install.log --single-version-externally-managed install_data

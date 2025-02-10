@@ -1,5 +1,6 @@
 import rtde_control, rtde_receive, rtde_io, time
 
+'''close and open the gripper'''
 
 class RobotArm:
     def __init__(self, robot_ip):

@@ -1,9 +1,11 @@
 /home/colby/srs_ws/install/picking_info/lib/python3.10/site-packages/picking_info/gripper_orientation_farthest_centroid.py
 /home/colby/srs_ws/install/picking_info/lib/python3.10/site-packages/picking_info/gripper_orientation_basic.py
+/home/colby/srs_ws/install/picking_info/lib/python3.10/site-packages/picking_info/save_cluster_coords.py
 /home/colby/srs_ws/install/picking_info/lib/python3.10/site-packages/picking_info/__init__.py
 /home/colby/srs_ws/install/picking_info/lib/python3.10/site-packages/picking_info/gripper_orientation_z_order.py
 /home/colby/srs_ws/install/picking_info/lib/python3.10/site-packages/picking_info/__pycache__/gripper_orientation_farthest_centroid.cpython-310.pyc
 /home/colby/srs_ws/install/picking_info/lib/python3.10/site-packages/picking_info/__pycache__/gripper_orientation_basic.cpython-310.pyc
+/home/colby/srs_ws/install/picking_info/lib/python3.10/site-packages/picking_info/__pycache__/save_cluster_coords.cpython-310.pyc
 /home/colby/srs_ws/install/picking_info/lib/python3.10/site-packages/picking_info/__pycache__/__init__.cpython-310.pyc
 /home/colby/srs_ws/install/picking_info/lib/python3.10/site-packages/picking_info/__pycache__/gripper_orientation_z_order.cpython-310.pyc
 /home/colby/srs_ws/install/picking_info/share/ament_index/resource_index/packages/picking_info
@@ -16,5 +18,6 @@
 /home/colby/srs_ws/install/picking_info/lib/python3.10/site-packages/picking_info-0.0.0-py3.10.egg-info/entry_points.txt
 /home/colby/srs_ws/install/picking_info/lib/python3.10/site-packages/picking_info-0.0.0-py3.10.egg-info/SOURCES.txt
 /home/colby/srs_ws/install/picking_info/lib/picking_info/gripper_orientation_basic
-/home/colby/srs_ws/install/picking_info/lib/picking_info/gripper_orientation_centroid
-/home/colby/srs_ws/install/picking_info/lib/picking_info/gripper_orientation_z
+/home/colby/srs_ws/install/picking_info/lib/picking_info/gripper_orientation_farthest_centroid
+/home/colby/srs_ws/install/picking_info/lib/picking_info/gripper_orientation_z_order
+/home/colby/srs_ws/install/picking_info/lib/picking_info/save_cluster_coords

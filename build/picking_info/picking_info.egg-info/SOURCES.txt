@@ -12,6 +12,7 @@ picking_info/__init__.py
 picking_info/gripper_orientation_basic.py
 picking_info/gripper_orientation_farthest_centroid.py
 picking_info/gripper_orientation_z_order.py
+picking_info/save_cluster_coords.py
 resource/picking_info
 test/test_copyright.py
 test/test_flake8.py

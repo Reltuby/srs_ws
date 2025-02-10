@@ -73,7 +73,7 @@ class FruitPickerNode(Node):
         try:
             self.get_logger().info('Processing Fruit Positions')
             #move in joint space to home position
-            self.rtde_c.moveJ([-3.14, -4.136, 2.53, -3.14, -1.57, 0], speed=self.spd, acceleration=self.accel)
+            self.rtde_c.moveJ([0, -4.136, 2.53, -2.79, -1.57, 0], speed=self.spd*2, acceleration=self.accel)
             self.rtde_io.setConfigurableDigitalOut(7, 0)
             self.home = True
 
@@ -131,7 +131,7 @@ class FruitPickerNode(Node):
 
                         if self.move_to_pose_and_log(waypoint_tilted_pose, "Picked fruit"):
                             #move in joint space to dropoff position
-                            self.rtde_c.moveJ([-3.5, -3.85, 1.74, -2.5, -0.22, 01.3], speed=self.spd, acceleration=self.accel)
+                            self.rtde_c.moveJ([0, -4.136, 2.53, -2.7, -0.7, 0.26], speed=self.spd*2, acceleration=self.accel)
                             # Open gripper
                             self.rtde_io.setConfigurableDigitalOut(7, 0)
 
@@ -151,7 +151,7 @@ class FruitPickerNode(Node):
 
                         if self.move_to_pose_and_log(waypoint_tilted_pose, "Picked fruit"):                                
                             #move in joint space to a dropoff position
-                            self.rtde_c.moveJ([-3.5, -3.85, 1.74, -2.5, -0.22, 01.3], speed=self.spd, acceleration=self.accel)
+                            self.rtde_c.moveJ([0, -4.136, 2.53, -2.7, -0.7, 0.26], speed=self.spd*2, acceleration=self.accel)
                             # Open gripper
                             self.rtde_io.setConfigurableDigitalOut(7, 0)
 
