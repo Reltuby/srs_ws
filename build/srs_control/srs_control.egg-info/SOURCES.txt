@@ -13,6 +13,7 @@ srs_control/__init__.py
 srs_control/coord_transform.py
 srs_control/fruit_pick_all.py
 srs_control/fruit_pick_individual.py
+srs_control/save_cluster_coords.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py

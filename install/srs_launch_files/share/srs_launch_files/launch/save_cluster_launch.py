@@ -33,7 +33,7 @@ def generate_launch_description():
     )
 
     save_cluster_coords = Node(
-        package='picking_info',
+        package='srs_control',
         executable='save_cluster_coords',
         name='save_cluster_coords',
         output='screen'

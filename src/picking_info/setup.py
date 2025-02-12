@@ -23,8 +23,7 @@ setup(
             'gripper_orientation_z_order = picking_info.gripper_orientation_z_order:main',
             'gripper_orientation_farthest_centroid = picking_info.gripper_orientation_farthest_centroid:main',
             'gripper_orientation_basic = picking_info.gripper_orientation_basic:main',
-            'save_cluster_coords = picking_info.save_cluster_coords:main',
-
+            
         ],
     },
 )

@@ -22,7 +22,9 @@ setup(
         'console_scripts': [
             'coord_transform = srs_control.coord_transform:main',
             'fruit_pick_all = srs_control.fruit_pick_all:main',
-            'fruit_pick_individual = srs_control.fruit_pick_individual:main'
+            'fruit_pick_individual = srs_control.fruit_pick_individual:main',
+            'save_cluster_coords = srs_control.save_cluster_coords:main',
+
         ],
     },
 )
