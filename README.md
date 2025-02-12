@@ -23,7 +23,7 @@ To connect to the UR5 robotic arm using `ur_rtde`, follow these steps:
 
 ## Running the System
 
-To launch the system, use the following ROS2 launch command in the terminal:
+To launch the system in the automated picking mode, use the following ROS2 launch command in the terminal:
 
 ```bash
 ros2 launch srs_launch_files start_nodes_launch.py gripper_orientation:=(parameter default=basic) picking_method:=(parameter default=individual)
@@ -36,3 +36,10 @@ ros2 launch srs_launch_files start_nodes_launch.py gripper_orientation:=(paramet
    - **basic**:    Sorts from lowest to highest, does not change gripper orientation
    - **farthest_centroid**:   Pick farthest kiwifruit from cluster centroid, Orient gripper based on average Vector to neighbors
    - **z_order**:   Pick lowest kiwifruit first, orient gripper based on average neighbor vector
+
+### Saving Coordinates
+To save the coordinates of a kiwifruit cluster, use the following ROS2 launch command in the terminal:
+```bash
+ros2 launch srs_launch_files save_cluster_launch.py
+```
+**Important** The coordinates are saved in text file in the workspace directory. When this is run you must rename the text file afterwards or it will be overwritten the next time a cluster is saved
